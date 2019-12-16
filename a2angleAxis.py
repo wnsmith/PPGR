@@ -1,7 +1,7 @@
 import numpy as np
 import math
 
-# proverimo da li je det A = 1
+# check if orthogonal matrix
 def is_orthogonal(A):
 	det = np.linalg.det(A)
 	# print(det)
@@ -21,10 +21,7 @@ E = [[1, 0, 0],
 
 
 res = np.matmul(R, np.transpose(R))
-# print(res)
 
-# print(is_orthogonal(R))
-# jeste AAt = E i detA = 1
 
 
 p = np.subtract(R, E)
@@ -42,7 +39,7 @@ x = np.cross(v1, v2)
 norma_x = math.sqrt(x[0]*x[0] + x[1]*x[1] + x[2]*x[2])
 # print(norma_x)
 
-# v oko koga rotiramo (sopstveni vektor za lamda = 1)
+# rotate vector
 p = (1/norma_x) * x
 # print(p)
 
