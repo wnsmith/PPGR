@@ -1,7 +1,7 @@
 import math
 import numpy as np
 
-# Proveravamo da li je matrica rotacije
+
 def isRotationMatrix(R) :
     Rt = np.transpose(R)
     shouldBeIdentity = np.dot(Rt, R)
